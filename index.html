@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WPI Ultimate — Весь софт в одном ISO</title>
+    <title>WPI Ultimate — Репозиторий сборок</title>
+
     <link rel="stylesheet" href="files/style.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
@@ -14,13 +16,12 @@
 
 <div class="bg-animation"></div>
 
-<div class="container single-product">
+<div class="container main-layout">
 
     <header class="fade-in">
         <div class="logo large">
             <i class="fa-solid fa-compact-disc"></i> WPI <span>Ultimate</span>
         </div>
-
         <div class="social-links">
             <a href="https://bit.ly/4mHYGAF" target="_blank" class="nav-btn donate large">
                 <i class="fa-solid fa-heart"></i> <span>Донат</span>
@@ -34,15 +35,13 @@
         </div>
     </header>
 
-    <main class="main-content fade-in-up">
+    <main class="product-grid fade-in-up">
+
         <div class="card glass-card hero-card">
-            <div class="card-badge">Актуальная версия</div>
+            <div class="card-badge legacy">Stable</div>
             <div class="card-icon-large"><i class="fa-solid fa-box-open"></i></div>
-            <h1>WPI Ultimate v.1.0</h1>
-            <p class="hero-description">
-                Автоматическая установка самого востребованного софта в один клик.
-                Чистые сборки, упор на <strong>Open Source</strong> и отсутствие мусора.
-            </p>
+            <h1>WPI v.1.0.0</h1>
+            <p class="hero-description">Классическая стабильная сборка на основе старого движка.</p>
 
             <div class="product-meta">
                 <div class="meta-item">
@@ -50,33 +49,62 @@
                     <span class="value">1.69 GB</span>
                 </div>
                 <div class="meta-item">
-                    <span class="label">Дата:</span>
-                    <span class="value">27.12.2024</span>
-                </div>
-                <div class="meta-item">
                     <span class="label">MD5:</span>
                     <div class="hash-box">
                         <span class="value">6ccca...5102</span>
-
-                        <button class="copy-btn" data-hash="6CCCAA2FDBA3925376F71946A3435102" onclick="copyToClipboard(this)" title="Скопировать хеш">
+                        <button class="copy-btn" data-hash="6CCCAA2FDBA3925376F71946A3435102" onclick="copyToClipboard(this)" title="Копировать">
                             <i class="fa-regular fa-copy"></i>
                         </button>
                     </div>
                 </div>
             </div>
+
             <div class="action-row-large">
                 <a href="https://mega.nz/file/gQQXjACL#ojLkIDsnE8_qnQWodnnzauW6gPOW4rPHVVB2Dn4FfxQ" class="btn-download-main">
-                    <i class="fa-solid fa-download"></i> Скачать ISO
+                    <i class="fa-solid fa-download"></i> Скачать
                 </a>
-                <button class="btn-info-large" title="Список изменений" onclick="showModal('Список изменений v.1.0', '<b>Что нового:</b><ul><li>Обновлены все браузеры до последних версий</li><li>Добавлены новые утилиты для диагностики дисков</li><li>Исправлены ошибки установки на Windows 11 24H2</li><li>Оптимизированы скрипты авто-активации</li><li>Добавлен темный режим для всех стандартных инструментов</li></ul><br><i>Рекомендуется чистая установка.</i>')">
+                <button class="btn-info-large" onclick="showModal('WPI v.1.0.0', 'Классический состав программ для повседневных задач.')">
                     <i class="fa-solid fa-list-ul"></i>
                 </button>
             </div>
         </div>
+
+        <div class="card glass-card hero-card highlighted">
+            <div class="card-badge">New Gen</div>
+            <div class="card-icon-large"><i class="fa-solid fa-rocket"></i></div>
+            <h1>WPI v.2.0.0</h1>
+            <p class="hero-description">Новое поколение. Оптимизировано для Windows 11 и самого свежего железа.</p>
+
+            <div class="product-meta">
+                <div class="meta-item">
+                    <span class="label">Размер:</span>
+                    <span class="value">2.45 GB</span>
+                </div>
+                <div class="meta-item">
+                    <span class="label">MD5:</span>
+                    <div class="hash-box">
+                        <span class="value">b5d2e...8a11</span>
+                        <button class="copy-btn" data-hash="B5D2E8A11C2D3E4F5A6B7C8D9E0F1A2B" onclick="copyToClipboard(this)" title="Копировать">
+                            <i class="fa-regular fa-copy"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="action-row-large">
+                <a href="#" class="btn-download-main">
+                    <i class="fa-solid fa-download"></i> Скачать
+                </a>
+                <button class="btn-info-large" onclick="showModal('WPI v.2.0.0', 'Обновленный движок установки.')">
+                    <i class="fa-solid fa-list-ul"></i>
+                </button>
+            </div>
+        </div>
+
     </main>
 
     <footer>
-        <p>&copy; 2026 Divopes <a href="mailto:pcedge@ukr.net">Поддержка</a></p>
+        <p>&copy; 2026 Divopes | <a href="mailto:pcedge@ukr.net">Поддержка</a></p>
     </footer>
 </div>
 
